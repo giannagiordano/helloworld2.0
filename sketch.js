@@ -12,7 +12,7 @@ function preload(){
 }
 
 function setup (){
-    createCanvas(800, 600);
+    createCanvas(windowWidth, windowHeight);
 }
 
 function draw(){
@@ -28,7 +28,7 @@ function draw(){
     }
 
     //Interaction with MLK and MG
-    if (mouseX > 400){
+    if (mouseX > width/2){
         image(img1, 600, 375, img.width/5, img.height/2.5);
         let a = '"Optimism for me is not a passive expectation that things will get better; it is a conviction that we can make things better."'
         fill(255, 255, 255);
